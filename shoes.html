@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Own Shoes</title>
+
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    
+
+    <style type="text/css">
+      .h4
+      {
+        margin-top: 130px;
+        margin-left: 80px;
+      }
+      .fnt
+      {
+        font-size: 40px;
+        margin-top: 170px;
+        margin-left: 80px;
+      }
+      .fnt1
+      {
+        font-size: 30px;
+        margin-top: 5px;
+        color: blueviolet;
+        margin-left: 80px;
+      }
+      #img
+      {
+        width: 500px;
+        height: 500px;
+        margin: 5px;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+      #img2
+      {
+           width: 300px;
+           height: 280px;
+           margin-left: 50px;
+           cursor: pointer;
+           border-radius: 10px;
+      }
+         
+        #img2:hover
+        
+        {
+        transform: scale(1.1); 
+        }
+
+
+        .about .row{
+          display: flex;
+          align-items: center;
+          gap:2rem;
+          flex-wrap: wrap;
+          padding:2rem 0;
+          padding-bottom: 3rem;
+         }
+
+         #img3
+         {
+          width: 200px;
+          height: 180px;
+         }
+
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background:#fff;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content{
+    flex:1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#333;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+      .btn1
+      {
+        background-image: radial-gradient(#027882 ,#024045 );
+        color: white;
+        border-color: #024045;
+        border-radius: 30px;
+        width: 120px;
+        height: 32px;
+        margin-left: 80px;
+      }
+
+      .btn3
+      {
+        background-image: radial-gradient(#027882 ,#024045 );
+        color: white;
+        border-color: #024045;
+        border-radius: 30px;
+        width: 120px;
+        height: 32px;
+        margin-left: 40px;
+      }
+    
+      #jum
+      {
+        width: 1150px;
+      }
+
+      #footer
+      {
+           width: 1300px;
+           height: 200px;
+           color: white;
+           background-color: black;
+      }
+      #lnk
+      {
+        color: red;
+        margin-top: 50px;
+
+      }
+      #p
+      {
+          margin-top: 50px;
+      }
+      .map
+      {
+        margin-top: 10px;
+        height: 160px;
+        width: 420px;
+      }
+      #img-back
+      {
+         width: 1100px;
+         height: 250px;
+      }
+      .service
+      {
+        background-color: white;
+        margin-top: -120px;
+        width: 350px;
+        border-radius: 10px;
+      }
+
+      #btn1{
+        margin-left: 200px;
+        width: 200px;
+        color: white;
+        border-radius: 20px;
+        background-image: radial-gradient(#027882 ,#024045 );
+       }
+
+
+      a
+    {
+         display: inline-block;
+         text-decoration: none;
+         color: white;
+     }
+
+     .footer-dark 
+     {
+       padding:50px 0;
+       color:#f0f9ff;
+       background-color:#282d32;
+     }
+
+     .footer-dark h3 
+      {
+        margin-top:0;
+        margin-bottom:12px;
+        font-weight:bold;
+        font-size:16px;
+      }
+
+      .footer-dark ul 
+      {
+        padding:0;
+        list-style:none;
+        line-height:1.6;
+        font-size:14px;
+        margin-bottom:0;
+      }
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+   #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-image: radial-gradient(#027882 ,#024045 );
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+   #myBtn:hover {
+  background-color: #027882;
+}
+
+  #Modal-Product
+  {
+    margin-Top: 150px;
+  }
+  #about-section
+  {
+    margin-top: 50px;
+  }
+  #oder-img
+  {
+      margin-top: -80px;
+      margin-left: 50px;
+  }
+
+
+  Skip Results Iframe
+EDIT ON
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+.spinner-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f6f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spinner {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  
+  .spinner::before,
+  .spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #c59d5f 0%,#515151 100% );
+    animation: spin .5s infinite linear;
+  }
+  
+  .spinner:after {
+    width: 90%;
+    height: 90%;
+    background-color: #f3f0f0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+    </style>
+  
+  
+</head>
+<body>
+
+<!--  Loder Effect  -->
+
+  <div class="spinner-wrapper">
+    <div class="spinner">
+    </div>
+  </div>
+   
+   <script type="text/javascript">
+     let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+      window.addEventListener('load', function(){
+      spinnerWrapper.style.display= 'none';
+});
+   </script>
+
+
+<!--  Loder Effect  End-->
+
+
+<!--  Nabbar Start  -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tour">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" data-toggle="tooltip" data-placement="bottom" title="Site-Name!">Own-Shoes</a>
+      </div>
+              
+              <div class="collapse navbar-collapse" id="tour">
+      <ul class="nav navbar-nav">
+        <li><a href="#Home" data-toggle="tooltip" data-placement="bottom" title="Home!">Home</a></li>
+        <li><a href="#About" data-toggle="tooltip" data-placement="bottom" title="About!">About</a></li>
+        <li><a href="#Shoes" data-toggle="tooltip" data-placement="bottom" title="Shoes!">Shoes</a></li>
+        <li><a href="#Offer" data-toggle="tooltip" data-placement="bottom" title="Offer!">Offer</a></li>
+        <li><a href="#Contact" data-toggle="tooltip" data-placement="bottom" title="Contact!">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" data-toggle="modal" data-target="#Shopping" data-placement="bottom" title="Add to Cart!!"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-heart" data-toggle="modal" data-target="#favourite" data-placement="bottom" title="favourite!"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user" data-toggle="modal" data-target="#signup" data-placement="bottom" title="Sign Up!"> SignUp </span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-placement="bottom" title="Login!" data-target="#login"> Login </span></a></li>      
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  Nabbar End  -->
+
+  <!-- Modal Favorite  -->   
+<div id="Shopping" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal Add to cart-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title"><center>Add to <b style="color: #027882;">Cart</b></center></h3>
+      </div>
+      <div class="modal-body">   
+    <form class="form-horizontal" action="/action_page.php" id="form">
+  <div class="form-group">
+    <img class="img-responsive" src="logingif.gif" width="75%" style="margin-left: 80px;">
+    <h2><center>Add your <b style="color: #027882;">Favourite Item in Cart!</b></center></h2>
+</div>
+</form>
+</div>
+  </div>
+</div>
+</div>
+  <!-- Modal Add to cart end -->   
+
+
+  <!-- Modal Favourite  -->   
+<div id="favourite" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal Favorite-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title"><center>Your <b style="color: #027882;">Favourite</b></center></h3>
+      </div>
+      <div class="modal-body">   
+    <form class="form-horizontal" action="/action_page.php" id="form">
+  <div class="form-group">
+    <img class="img-responsive" src="logingif.gif" width="75%" style="margin-left: 80px;">
+    <h2><center>Add your <b style="color: #027882;">Favourite Item!</b></center></h2>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+  <!-- Modal Favorite End -->   
+
+
+  <!-- Modal Login  -->   
+<div id="signup" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center>Sign Up</center></h4>
+      </div>
+
+      <div class="modal-body">   
+    <form class="form-horizontal" action="/action_page.php" id="form">
+  <div class="form-group">
+      <label class="control-label col-sm-4" for="email">Username</label>
+    <div class="col-sm-7">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="txt" class="form-control" id="" placeholder="Username" required>
+    </div>  
+  </div>
+</div>
+
+  <div class="form-group" id="pass">
+        <label class="control-label col-sm-4" for="email">Password</label>
+    <div class="col-sm-7">
+        <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="password" class="form-control" id="" placeholder="Password" required>
+    </div>
+  </div>
+</div>
+
+
+  <div class="form-group" id="pass">
+        <label class="control-label col-sm-4" for="email">Confirm Password</label>
+    <div class="col-sm-7">
+        <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="password" class="form-control" id="" placeholder="Confirm Password" required>
+    </div>
+  </div>
+</div>
+
+  <input type="submit" class="btn" id="btn1" name="SignUp">
+
+
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+  <!-- Login Icon  -->   
+
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Login content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center>Login</center></h4>
+      </div>
+      <div class="modal-body">
+  
+   
+         <form class="form-horizontal" action="/action_page.php" id="form">
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="email">Username</label>
+    <div class="col-sm-7">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="txt" class="form-control" id="email" placeholder="Username" required>
+    </div>  
+  </div>
+</div>
+
+  <div class="form-group">
+        <label class="control-label col-sm-3" for="email">Password</label>
+    <div class="col-sm-7">
+        <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="password" class="form-control" id="inputError" placeholder="Password" required>
+    </div>
+  </div>
+</div>
+
+  <input type="submit" class="btn" id="btn1" name="Login">
+
+
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+  <!-- Home Images  -->   
+  <section id="Home">
+   <div class="container-fluid">
+    <div class="col-sm-6 " >
+            <p class="fnt">Discover the greatest <br> shoes collection at the</p>
+
+            <p class="fnt1">Most affordable price !!!</p>
+
+            <button class="btn1" data-toggle="tooltip" data-placement="bottom" title="Shopping!"><a href="#Shoes">Get strated</a></button>
+
+      </div>
+
+     <div class="container-fluid">
+
+      <div class="col-sm-6">
+
+            <img class="img-responsive" src="bucca-bucci-black.png" id="img"> 
+     </div>
+   </div>
+ </div>
+</section>
+
+
+<!-- about section starts  -->
+
+
+    <section class="about" id="About">
+     <div class="container">
+    <h1 class="heading"> <center><span style="color: #027882;"> About </span><b> Us </b></center></h1>
+      <div class="col-sm-6">
+    <div class="row">
+
+        <div class="video-container">
+            <video src="shopping_vd1.mp4" loop autoplay muted></video>
+          </div>
+        </div>
+      </div>
+
+        <div class="content" id="about-section">
+                <div class="col-sm-6">
+            <h1>Why choose us?</h1>
+            <p style="font-size: 20px;">We will try to provide all your products in good and best quality. You will not be scammed by our website. This web site of mine is trustworthy.</p>
+            <p></p>
+            <button class="btn1">learn more</button>
+         </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- about section ends -->
+
+
+
+  <!-- Shoes Images  -->   
+
+ 
+     <div class="container-fluid" id="Shoes">
+
+      <h1><center>Shoes <b style="color: #027882;"> Best Prise </b></center></h1>
+
+      <div class="col-md-4 col-sm-6 col-xd-12">
+    <a data-toggle="modal" data-target="#myModal"><img class="img-responsive" id="img2" src="puma-red.png" alt="puma-red"><br></a>
+    <h3><center>Puma Red</center></h3>
+    </div>
+
+    <div class="col-md-4 col-sm-6 col-xd-12">
+    <a data-toggle="modal" data-target="#second"><img class="img-responsive" id="img2" src="red-tape-sneraker.png" alt="red-tape-sneraker"><br></a>
+    <h3> <center>Red Tape Sneraker</center></h3>
+      </div>
+
+    <div class="col-md-4 col-sm-6 col-xd-12">
+    <a data-toggle="modal" data-target="#third"><img class="img-responsive" id="img2" src="bucca-bucci-black.png" alt="bucca-bucci-black"><br></a>
+     <h3><center>Bucca Bucci Black</center></h3>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xd-12">
+    <a data-toggle="modal" data-target="#four"><img class="img-responsive" id="img2" src="centrino-green.png" alt="centrino-green"><br></a>
+    <h3><center>Centrino Green</center></h3>
+    </div>
+
+    <div class="col-md-4 col-sm-6 col-xd-12">
+    <a data-toggle="modal" data-target="#five"><img class="img-responsive" id="img2" src="global-rich-white.png" alt="global-rich-white"><br></a>
+     <h3><center>Global Rich White</center></h3>
+      </div>
+
+    <div class="col-md-4 col-sm-6 col-xd-12">
+    <a data-toggle="modal" data-target="#six"><img class="img-responsive" id="img2" src="bacca-bucci.png" alt="bacca-bucci"><br></a>
+    <h3> <center>Bacca Bucci</center></h3>
+      </div>    
+     </div><br><br><br>
+
+
+     <!-- shoes end -->
+
+     <!-- Offer Slider Start -->
+
+     <!-- Offer Slider end -->
+
+     <!-- Container (Contact Section) -->
+<div id="Contact" class="container">
+  <h3 class="text-center"><h1 style="color: #027882;"><center>Contact</center></h1></h3>
+  <p class="text-center"><em><center>We love our fans!</center></em></p>
+
+  <div class="row">
+    <div class="col-md-6">
+       <img class="img-responsive" src="OnlineShopping.jpg" alt="Oder-Images" width="60%" id="oder-img">
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right btn-success" type="submit" style="width:100px;   background-image: radial-gradient(#027882 ,#024045 );" title="Send!">  Send  <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+
+<!-- Footer  -->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Quick Link</h3>
+                        <ul>
+                            <li><a href="#Home" title="Home">Home</a></li>
+                            <li><a href="#About" title="About">About</a></li>
+                            <li><a href="#Shoes" title="Shoes">Shoes</a></li>
+                            <li><a href="#Contact" title="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Location</h3>
+                        <ul>
+                            <li><a href="https://www.google.com/maps/place/Rajkot,+Gujarat/@22.273625,70.7388939,12z/data=!3m1!4b1!4m6!3m5!1s0x3959c98ac71cdf0f:0x76dd15cfbe93ad3b!8m2!3d22.3038945!4d70.8021599!16zL20vMDNnbWxx?authuser=0" title="Rajkot">Rajkot</a></li>
+
+                            <li><a href="https://www.google.com/maps/place/Ahmedabad,+Gujarat/@23.0204741,72.4149277,11z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3959c98ac71cdf0f:0x76dd15cfbe93ad3b!2sRajkot,+Gujarat!3b1!8m2!3d22.3038945!4d70.8021599!16zL20vMDNnbWxx!3m5!1s0x395e848aba5bd449:0x4fcedd11614f6516!8m2!3d23.022505!4d72.5713621!16zL20vMDFkODhj?authuser=0" title="Ahmedabad">Ahmedabad</a></li>
+
+                            <li><a href="https://www.google.com/maps/place/Surat,+Gujarat/@21.1594406,72.6574811,11z/data=!3m1!4b1!4m6!3m5!1s0x3be04e59411d1563:0xfe4558290938b042!8m2!3d21.1702401!4d72.8310607!16zL20vMDFoMWhu?authuser=0" title="Surat">Surat</a></li>
+
+                            <li><a href="https://www.google.com/maps/place/Mumbai,+Maharashtra/@19.082502,72.7163707,11z/data=!3m1!4b1!4m6!3m5!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d19.0759837!4d72.8776559!16zL20vMDR2bXA?authuser=0" title="Mumbai">Mumbai</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Extra Link</h3>
+                        <ul>
+                            <li><a style="cursor: pointer;">my account</a></li>
+                            <li><a style="cursor: pointer;">my order</a></li>
+                            <li><a style="cursor: pointer;">my favorite</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                    <p>Drop a note.</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp &nbsp Rajkot, Gujrat</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>&nbsp &nbsp Phone: +91 9876543210</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>&nbsp &nbsp Email: example1234@mail.com</p>
+                 </div>
+                </div>
+                <p class="copyright"> created by <span> Own-Shoes </span> | all rights reserved </p>
+            </div>
+        </footer>
+    </div>
+
+<!-- Footer End -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="Modal-Product">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center> <b>Best</b><b style="color: #027882;"> Affordable Price!! </b></center></h4>
+      </div>
+      <div class="modal-body">
+    <div class="col-sm-6 col-xd-12">
+      <img class="img-responsive" id="img3" src="puma-red.png" alt="puma-red"><br></a> 
+      </div>
+
+  <!-- Inforamtion -->
+      
+    <div class="col-sm-6 col-xd-12">
+        <h3>Puma Red</h3>
+        <h4><b>₹ 1500 </b> &nbsp &nbsp <b style="color:orange;">50% OFF </b></h4>
+        <h5>Include all Taxes</h5>
+       <span><h4>Color</h4> <h5 style="color:red;"><b>Red</b></h5></span>
+       <button class="btn3" title="Buy product!">Buy</button>
+      </div> 
+
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- Modal End -->
+
+
+<!-- Modal second-->
+<div id="second" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="Modal-Product">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center> <b>Best</b><b style="color: #027882;"> Affordable Price!! </b></center></h4>
+      </div>
+      <div class="modal-body">
+    <div class="col-sm-6 col-xd-12">
+      <img class="img-responsive" id="img3" src="red-tape-sneraker.png" alt="puma-red"><br></a> 
+      </div>
+
+  <!-- Inforamtion -->
+      
+    <div class="col-sm-6 col-xd-12">
+        <h3>Red Tape Sneraker</h3>
+        <h4><b>₹ 2200 </b> &nbsp &nbsp <b style="color:orange;">30% OFF </b></h4>
+        <h5>Include all Taxes</h5>
+       <span><h4>Color</h4> <h5><b>White</b></h5></span>
+       <button class="btn3" title="Buy product!">Buy</button>
+      </div> 
+
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal End -->
+
+<!-- Modal third-->
+<div id="third" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="Modal-Product">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center> <b>Best</b><b style="color: #027882;"> Affordable Price!! </b></center></h4>
+      </div>
+      <div class="modal-body">
+    <div class="col-sm-6 col-xd-12">
+      <img class="img-responsive" id="img3" src="bucca-bucci-black.png" alt="puma-red"><br></a> 
+      </div>
+
+  <!-- Inforamtion -->
+      
+    <div class="col-sm-6 col-xd-12">
+        <h3>Bucca Bucci Black</h3>
+        <h4><b>₹ 5000 </b> &nbsp &nbsp <b style="color:orange;">10% OFF </b></h4>
+        <h5>Include all Taxes</h5>
+       <span><h4>Color</h4> <h5><b>Black</b></h5></span>
+       <button class="btn3" title="Buy product!">Buy</button>
+      </div> 
+
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal End -->
+
+<!-- Modal fourth-->
+<div id="four" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="Modal-Product">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center> <b>Best</b><b style="color: #027882;"> Affordable Price!! </b></center></h4>
+      </div>
+      <div class="modal-body">
+    <div class="col-sm-6 col-xd-12">
+      <img class="img-responsive" id="img3" src="centrino-green.png" alt="centrino-green"><br></a> 
+      </div>
+
+  <!-- Inforamtion -->
+      
+    <div clacss="col-sm-6 col-xd-12">
+        <h3>Centrino Green</h3>
+        <h4><b>₹ 3500 </b> &nbsp &nbsp <b style="color:orange;">5% OFF </b></h4>
+        <h5>Include all Taxes</h5>
+       <span><h4>Color</h4> <h5><b style="color:grey;">Grey</b></h5></span>
+       <button class="btn3" title="Buy product!">Buy</button>
+      </div> 
+
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal End -->
+
+
+<!-- Modal fifth-->
+<div id="five" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="Modal-Product">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center> <b>Best</b><b style="color: #027882;"> Affordable Price!! </b></center></h4>
+      </div>
+      <div class="modal-body">
+    <div class="col-sm-6 col-xd-12">
+      <img class="img-responsive" id="img3" src="global-rich-white.png" alt="centrino-green"><br></a> 
+      </div>
+
+  <!-- Inforamtion -->
+      
+    <div clacss="col-sm-6 col-xd-12">
+        <h3>Global Rich White</h3>
+        <h4><b>₹ 4000 </b> &nbsp &nbsp <b style="color:orange;">20% OFF </b></h4>
+        <h5>Include all Taxes</h5>
+       <span><h4>Color</h4> <h5><b>White</b></h5></span>
+       <button class="btn3" title="Buy product!">Buy</button>
+      </div> 
+
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal End -->
+
+
+<!-- Modal six-->
+<div id="six" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="Modal-Product">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center> <b>Best</b><b style="color: #027882;"> Affordable Price!! </b></center></h4>
+      </div>
+      <div class="modal-body">
+    <div class="col-sm-6 col-xd-12">
+      <img class="img-responsive" id="img3" src="bacca-bucci.png" alt="bacca-bucci"><br></a> 
+      </div>
+
+  <!-- Inforamtion -->
+      
+    <div clacss="col-sm-6 col-xd-12">
+        <h3>Bacca Bucci Dark</h3>
+        <h4><b>₹ 2000 </b> &nbsp &nbsp <b style="color:orange;">55% OFF </b></h4>
+        <h5>Include all Taxes</h5>
+       <span><h4>Color</h4> <h5><b>Dark</b></h5></span>
+       <button class="btn3" title="Buy product!">Buy</button>
+      </div> 
+
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal End -->
+
+<!-- Top Button Start -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></button>
+
+<!-- Top Button End -->
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</body>
+</html>
